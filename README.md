@@ -44,18 +44,18 @@ Para cada repositório, escolha uma prática ou dado de teste relevante e expliq
 
 ## Respostas
 
-### Repositório 1 
+### Repositório 1
 
-Repositório: `<URL_DO_REPOSITÓRIO>`
+Repositório: https://github.com/fastapi/fastapi
 
-URL TestMiner: `<URL_NO_TESTMINER>`
+URL TestMiner: https://andrehora.github.io/testminer/#fastapi/fastapi
 
-Explicação: `<SUA_EXPLICAÇÃO>`
+Explicação: No branch `main`, o TestMiner classifica 370 itens como testes e também identifica helpers, benchmarks, testes de CI e smoke tests. A listagem mostra áreas como `tutorial001`, `security`, `tutorial003`, `tutorial002` e `response`, o que sugere que a suíte está organizada por funcionalidades e também cobre exemplos da documentação. Outro dado interessante é a identificação de `pytest` e de plugins como `pytest-cov`, `pytest-xdist` e `pytest-timeout`: além de escrever testes, o projeto dispõe de ferramentas para medir cobertura, distribuir a execução e limitar testes demorados. Esses indicadores são úteis para entender a estrutura e as ferramentas de teste sem precisar começar lendo cada arquivo. As contagens são a classificação apresentada pelo TestMiner, não necessariamente o número de casos de teste individuais.
 
 ### Repositório 2
 
-Repositório: `<URL_DO_REPOSITÓRIO>`
+Repositório: https://github.com/prisma/prisma
 
-URL TestMiner: `<URL_NO_TESTMINER>`
+URL TestMiner: https://andrehora.github.io/testminer/#prisma/prisma
 
-Explicação: `<SUA_EXPLICAÇÃO>`
+Explicação: No branch `main`, o painel do TestMiner identifica 632 itens na categoria de testes, 884 em E2E, 580 fixtures e 1.060 helpers de teste. Para mim, o dado mais relevante é a presença expressiva de E2E junto com fixtures: isso aponta para uma estratégia que não depende só de testes unitários, mas também exercita fluxos completos e prepara dados/configurações para cenários de teste. A ferramenta ainda destaca nomes recorrentes como `index`, `get`, `type`, `migrate` e `schema`, dando pistas das áreas do produto que recebem cobertura. Como no FastAPI, esses valores são itens classificados pelo TestMiner e não devem ser lidos como contagem exata de funções de teste ou de execuções. A análise é um retrato do branch consultado e pode mudar conforme o repositório evolui.
